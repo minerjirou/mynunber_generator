@@ -6,7 +6,8 @@
 ツールには以下の2つのスクリプトが含まれています。
 
 1. **`mynumber_generator_cpp2py.py`**
-   - C++コードをPythonに移植したCUDAによる生成ツール。
+   - yayoimizuhaさんが作られたマイナンバー生成C++コードをPythonに移植した生成ツール。  
+   [ベースとなったyayoimizuha/mynumber_generatorのリンク](https://github.com/yayoimizuha/mynumber_generator)　
 2. **`mynumber_generator_cuda.py`**
    - Pythonのみで純粋に書いた高速なCUDAカーネルを用いた生成ツール。
 
@@ -102,5 +103,4 @@ pip install numpy numba
   - `mynumber_generator_cuda.py`
     ```python
     with open("generated_numbers.txt", "w") as f:
-    ```
-
+    ```  
